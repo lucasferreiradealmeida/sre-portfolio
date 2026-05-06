@@ -1,0 +1,10 @@
+# Ambientes Virtuais Python
+.venv/
+venv/
+__pycache__/
+
+# Terraform (para a nossa próxima fase)
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
