@@ -49,7 +49,7 @@ A esteira de deploy automatizada rodando com sucesso.
 
 ### Aplicação Rodando
 A API Python respondendo diretamente de dentro do cluster Kubernetes através do roteamento de portas.
-![API Python no Navegador](link-da-sua-imagem-do-hello-world-aqui.png)
+![API Python no Navegador](https://github.com/user-attachments/assets/a63ee25c-6f9c-4b4b-a3b7-b545117ab870)
 
 ### Dashboards de Observabilidade (Grafana)
 Painéis detalhando o consumo de recursos do cluster e tráfego de rede, essenciais para a operação em NOC/SRE.
@@ -64,4 +64,4 @@ Seguindo as boas práticas de gestão de custos em Cloud Computing, toda a infra
 ---
 
 **Autor:** Lucas Ferreira de Almeida  
-*Conecte-se comigo no [LinkedIn](https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/lucas-ferreira0/) ou acompanhe meus estudos no GitHub.*
+*Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/lucas-ferreira0/) ou acompanhe meus estudos no GitHub.*
