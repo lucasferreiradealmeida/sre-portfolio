@@ -53,8 +53,8 @@ A API Python respondendo diretamente de dentro do cluster Kubernetes através do
 
 ### Dashboards de Observabilidade (Grafana)
 Painéis detalhando o consumo de recursos do cluster e tráfego de rede, essenciais para a operação em NOC/SRE.
-![Painel Grafana - CPU e Memória](link-da-sua-imagem-do-grafana-cpu-memoria-aqui.png)
-![Painel Grafana - Rede e IOPS](link-da-sua-imagem-do-grafana-rede-iops-aqui.png)
+![Painel Grafana - CPU e Memória](https://github.com/user-attachments/assets/5334504d-deb8-46d0-adb4-8ee4944cdbba)
+![Painel Grafana - Rede e IOPS](https://github.com/user-attachments/assets/da844f32-008a-44f6-b6cc-b0e0990de200)
 
 ---
 
@@ -64,4 +64,4 @@ Seguindo as boas práticas de gestão de custos em Cloud Computing, toda a infra
 ---
 
 **Autor:** Lucas Ferreira de Almeida  
-*Conecte-se comigo no [LinkedIn](https://linkedin.com/in/seu-perfil) ou acompanhe meus estudos no GitHub.*
+*Conecte-se comigo no [LinkedIn](https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/lucas-ferreira0/) ou acompanhe meus estudos no GitHub.*
