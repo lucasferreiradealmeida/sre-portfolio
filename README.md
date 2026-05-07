@@ -45,7 +45,7 @@ A telemetria do cluster foi extraída para dashboards avançados no **Grafana**,
 
 ### Pipeline de CI/CD (GitHub Actions)
 A esteira de deploy automatizada rodando com sucesso.
-![Pipeline CI/CD](<img width="1863" height="813" alt="Captura de tela 2026-05-07 145651" src="https://github.com/user-attachments/assets/960477ca-36bd-46c1-99dd-99b881cb8ff7" />)
+![Pipeline CI/CD](https://github.com/user-attachments/assets/960477ca-36bd-46c1-99dd-99b881cb8ff7)
 
 ### Aplicação Rodando
 A API Python respondendo diretamente de dentro do cluster Kubernetes através do roteamento de portas.
