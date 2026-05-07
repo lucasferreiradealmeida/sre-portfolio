@@ -24,7 +24,7 @@ jobs:
       - name: 3. Construir e Enviar a Imagem
         uses: docker/build-push-action@v4
         with:
-          context: . # Mude para ./app se o seu Dockerfile estiver dentro da pasta app
+          context: ./app # Mude para ./app se o seu Dockerfile estiver dentro da pasta app
           push: true
           # Isso vai criar a imagem com o seu usuário, nome do app e a tag latest
           tags: ${{ secrets.MEU_DOCKER_USER }}/sre-api:latest
