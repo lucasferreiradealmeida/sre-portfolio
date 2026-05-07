@@ -59,16 +59,16 @@ A confiabilidade desta API não é apenas presumida, ela é medida.
 
 ### Pipeline de CI/CD (GitHub Actions)
 A esteira de deploy automatizada rodando com sucesso.
-![Pipeline CI/CD](link-da-sua-imagem-da-bolinha-verde-aqui.png)
+![Pipeline CI/CD](https://github.com/user-attachments/assets/960477ca-36bd-46c1-99dd-99b881cb8ff7)
 
 ### Aplicação Rodando
 A API Python respondendo diretamente de dentro do cluster Kubernetes através do roteamento de portas.
-![API Python no Navegador](link-da-sua-imagem-do-hello-world-aqui.png)
+![API Python no Navegador](https://github.com/user-attachments/assets/a63ee25c-6f9c-4b4b-a3b7-b545117ab870)
 
 ### Dashboards de Observabilidade (Grafana)
 Painéis detalhando o consumo de recursos do cluster e tráfego de rede, essenciais para a operação em NOC/SRE.
-![Painel Grafana - CPU e Memória](link-da-sua-imagem-do-grafana-cpu-memoria-aqui.png)
-![Painel Grafana - Rede e IOPS](link-da-sua-imagem-do-grafana-rede-iops-aqui.png)
+![Painel Grafana - CPU e Memória](https://github.com/user-attachments/assets/5334504d-deb8-46d0-adb4-8ee4944cdbba)
+![Painel Grafana - Rede e IOPS](https://github.com/user-attachments/assets/da844f32-008a-44f6-b6cc-b0e0990de200)
 
 ---
 
@@ -78,4 +78,4 @@ Seguindo as boas práticas de gestão de custos em Cloud Computing, toda a infra
 ---
 
 **Autor:** Lucas Ferreira de Almeida  
-*Conecte-se comigo no [LinkedIn](https://linkedin.com/in/seu-perfil) ou acompanhe meus estudos no GitHub.*
+*Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/lucas-ferreira0/) ou acompanhe meus estudos no GitHub.*
