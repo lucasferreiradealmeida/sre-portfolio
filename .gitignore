@@ -8,3 +8,12 @@ __pycache__/
 *.tfstate
 *.tfstate.backup
 .terraform.tfstate.lock.info
+
+# Chaves SSH (Segurança)
+terraform/sre_key
+terraform/sre_key.pub
+*.pem
+
+# Lixo do Sistema Operacional
+desktop.ini
+*.txt.txt

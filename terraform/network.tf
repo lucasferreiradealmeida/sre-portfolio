@@ -40,6 +40,8 @@ resource "aws_security_group" "sre_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
+    # NOTA DE ARQUITETURA: Para fins de laboratório, o SSH está aberto para o mundo.
+    # Em um ambiente de produção real, esta regra seria restrita ao IP do operador ou VPN.
     cidr_blocks = ["0.0.0.0/0"] 
   }
   # Acesso a nossa API Python

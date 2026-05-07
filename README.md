@@ -41,6 +41,20 @@ A telemetria do cluster foi extraída para dashboards avançados no **Grafana**,
 
 ---
 
+## ⚖️ Decisões de Arquitetura (Trade-offs)
+
+* **Por que `kubeadm` e não EKS/AKS?** 
+A escolha por provisionar o cluster "do zero" utilizando instâncias EC2 puras e `kubeadm` foi intencional. O objetivo foi demonstrar o domínio sobre os *internals* do Kubernetes (Containerd, CNI Calico, certificados e componentes do Control Plane), alinhado com as exigências da certificação **CKA**. Em produção, a adoção de serviços gerenciados (EKS) seria o caminho natural para reduzir o toil de gestão da infraestrutura.
+
+## 🎯 Observabilidade, SLOs e Error Budgets
+
+A confiabilidade desta API não é apenas presumida, ela é medida.
+* **SLI Monitorado:** Taxa de Sucesso de Requisições HTTP (Status 2xx/3xx) e Latência.
+* **SLO Definido:** 99.5% das requisições devem retornar com sucesso em menos de 300ms, medido em uma janela móvel de 30 dias.
+* **Error Budget:** O ambiente possui uma margem de 0.5% de falhas permitidas. Alertas de *Burn Rate* (Taxa de Queima) foram configurados no Prometheus/Alertmanager para notificar a equipe proativamente caso o consumo do Error Budget acelere, evitando que o SLO seja violado.
+
+---
+
 ## 📸 Evidências e Resultados
 
 ### Pipeline de CI/CD (GitHub Actions)
