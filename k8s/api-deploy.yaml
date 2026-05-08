@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sre-api-deploy
+  namespace: default
+  labels:
+    app: sre-api
+spec:
+  replicas: 3 # Alta disponibilidade garantida
+  selector:
+    matchLabels:
+      app: sre-api
+  template:
+    metadata:
+      labels:
+        app: sre-api
+    spec:
+      containers:
+      - name: sre-api-container
+        image: lucasferreiradealmeida/sre-api:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sre-api-svc
+  namespace: default
+spec:
+  selector:
+    app: sre-api
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+  type: ClusterIP
