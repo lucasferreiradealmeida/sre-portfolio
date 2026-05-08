@@ -27,6 +27,24 @@ spec:
           limits:
             cpu: "250m"
             memory: "256Mi"
+        # Readiness Probe: o K8s só envia tráfego para o pod quando esta checagem
+        # passar. Garante que nenhuma requisição chega antes da app estar pronta.
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8000
+          initialDelaySeconds: 5   # Aguarda 5s após o container subir antes da 1ª checagem
+          periodSeconds: 10        # Repete a checagem a cada 10s
+          failureThreshold: 3      # Remove do load balancer após 3 falhas consecutivas
+        # Liveness Probe: o K8s reinicia o pod se esta checagem falhar.
+        # Detecta travamentos que não matam o processo mas tornam a app inoperante.
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8000
+          initialDelaySeconds: 15  # Aguarda mais que o readiness para evitar restart prematuro
+          periodSeconds: 20        # Checagem menos frequente, pois reiniciar é custoso
+          failureThreshold: 3      # Reinicia o pod após 3 falhas consecutivas
 
 ---
 apiVersion: v1
